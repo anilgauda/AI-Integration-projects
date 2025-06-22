@@ -1,0 +1,48 @@
+# Node
+node_modules/
+.npm/
+
+# Build output
+dist/
+build/
+.next/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+
+# VSCode
+.vscode/
+
+# Local
+*.local
+
+# Coverage
+coverage/
+
+# Server uploads
+server/uploads/
+
+# Database snapshots
+Database_Snapshot/
+
+# Misc
+*.log
+*.tmp
+
+# Ignore by IDEs
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

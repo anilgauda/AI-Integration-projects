@@ -1,0 +1,20 @@
+services:
+  valkey:
+    image: valkey/valkey
+    ports:
+      - 6379:6379
+  qdrant:
+    image: qdrant/qdrant
+    ports:
+      - 6333:6333
+  ollama:
+    image: ollama/ollama
+    ports:
+      - 11434:11434
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      # This will auto-pull the gemma3 model on container startup
+      - OLLAMA_MODELS=gemma3,mxbai-embed-large,llama3
+volumes:
+  ollama_data:
